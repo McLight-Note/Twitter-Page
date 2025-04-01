@@ -1,0 +1,14 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.whole-page{
+    display: flex;
+}
+
+.bottom-page{
+    display: flex;
+    column-gap: 4px;
+    text-decoration: none;
+    margin-top: 40px;
+}
