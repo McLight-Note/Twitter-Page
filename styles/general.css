@@ -3,7 +3,11 @@ body{
 }
 
 .whole-page{
-    display: flex;
+    display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 40px;
+    
 }
 
 .bottom-page{
@@ -11,4 +15,40 @@ body{
     column-gap: 4px;
     text-decoration: none;
     margin-top: 40px;
+    justify-content: space-evenly;
 }
+
+@media (max-width: 900px) {
+    .whole-page {
+      grid-template-columns: 1fr;
+      align-items: center;
+    }
+  
+    .image-twitter-setting {
+      height: 60px;
+    }
+  
+    .image-twitter {
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  @media (min-width: 900px) {
+    .whole-page {
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+    }
+  
+    .image-twitter-setting { 
+      height: 300px;
+    }
+    .image-twitter {
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
